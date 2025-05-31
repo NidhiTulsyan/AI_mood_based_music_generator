@@ -61,14 +61,16 @@ Before running the app, create accounts and obtain API keys:
 ```bash
 git clone https://github.com/NidhiTulsyan/AI_mood_based_music_generator.git
 cd AI_mood_based_music_generator
-
+```
+----
 ### 🖥️ Step 2: Backend Setup (Node + Express)
 
 ```bash
 cd server
 npm install
 
-
+```
+----
 ### 🖥️ Step 3: Create a .env file inside the server/ folder
 
 ```bash
@@ -76,11 +78,13 @@ HUGGING_FACE_API_KEY=your_huggingface_token
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 
-
+```
+---
 ### ⚙️ Step 4: Start the backend server
 
 ```bash
 node server.js
+```
 
 Server will run on: http://localhost:8000
 
@@ -91,6 +95,7 @@ Server will run on: http://localhost:8000
 cd ../client
 npm install
 npm start
+```
 
 Frontend will run on: http://localhost:3000
 
