@@ -1,18 +1,26 @@
-# 🎵 AI Mood Based Music Generator
+# 🎵 AI Mood Based Music Generator · [Live Demo 🌐](https://mooodifyai.netlify.app/)
 
-Transform your **mood** into **music** with the power of Artificial Intelligence!  
-This web app analyzes your **facial expression** from an image and plays **emotion-matching Spotify tracks** just for you.  
-Built using **React**, **Node.js**, **Hugging Face Inference API**, and the **Spotify Web API**.
+A web application that detects a user's **emotions from text input** and plays **personalized Spotify songs** that match the mood — using Hugging Face NLP models and Spotify API integration..
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React (Frontend)
+- 🟩 Node.js + Express (Backend)
+- 🤗 Hugging Face (Emotion Detection Model)
+- 🎧 Spotify Web API (Music Fetching)
+- 🌐 Netlify (Frontend Hosting)
+- ☁️ Render (Backend Hosting)
 
 ---
 
 ## 🌟 Features
 
-- 🤖 AI-based mood detection from images
-- 🎧 Spotify music recommendations based on your mood
-- 📷 Upload image → Detect mood → Get personalized songs
-- ⚛️ Full-stack: React frontend + Node.js backend
-- ☁️ Deployable on Netlify (frontend) and Render (backend)
+- 🤖 AI-based mood detection from user input (text)
+- 🎧 Personalized Spotify music recommendations
+- ⚛️ Full-stack application: React + Node.js
+- 🎨 Clean and responsive UI
 
 ---
 
@@ -22,17 +30,11 @@ https://mooodifyai.netlify.app/
 
 ---
 
-## 📁 Folder Structure
+## ✅ Prerequisites
 
-AI_mood_based_music_generator/
-├── client/ # React Frontend
-│ ├── public/
-│ ├── src/
-│ └── package.json
-├── server/ # Node + Express Backend
-│ ├── server.js
-│ └── package.json
-└── README.md
+- Node.js & npm
+- Spotify Developer account
+- Hugging Face API key
 
 ---
 
@@ -60,4 +62,55 @@ Before running the app, create accounts and obtain API keys:
 git clone https://github.com/NidhiTulsyan/AI_mood_based_music_generator.git
 cd AI_mood_based_music_generator
 
+### 🖥️ Step 2: Backend Setup (Node + Express)
 
+```bash
+cd server
+npm install
+
+
+### 🖥️ Step 3: Create a .env file inside the server/ folder
+
+```bash
+HUGGING_FACE_API_KEY=your_huggingface_token
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+
+
+### ⚙️ Step 4: Start the backend server
+
+```bash
+node server.js
+
+Server will run on: http://localhost:8000
+
+
+### 🌐 Step 3: Frontend Setup (React)
+
+```bash
+cd ../client
+npm install
+npm start
+
+Frontend will run on: http://localhost:3000
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to **fork the repo**, **submit pull requests**, or **report bugs and suggestions**.
+
+---
+
+## 📃 License
+
+This project is licensed under the **MIT License**  
+© 2025 **Nidhi Tulsyan**
+
+---
+
+## 🙌 Acknowledgements
+
+- [Hugging Face](https://huggingface.co/)
+- [Spotify for Developers](https://developer.spotify.com/)
+- [Render](https://render.com/)
+- [Netlify](https://www.netlify.com/)
