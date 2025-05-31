@@ -17,7 +17,7 @@ const MoodInput = () => {
     
     try {
       const { data } = await axios.post(
-        'http://localhost:8000/api/playlist',
+        'https://ai-mood-based-music-generator-1.onrender.com/api/playlist',
         { text: moodText }
       );
       setPlaylist(data.tracks);
